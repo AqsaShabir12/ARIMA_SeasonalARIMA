@@ -44,14 +44,14 @@ This project demonstrates how to model and forecast monthly champagne sales usin
   ```python
   from statsmodels.tsa.arima.model import ARIMA
   model = ARIMA(df['Sales'], order=(1, 1, 1))
-  model_fit = model.fit()```
+  model_fit = model.fit()
 - Inspected summary for coefficient significance and diagnostics.
 ### 6. **SARIMA Model Building**
 - Added seasonal order (1,1,1,12) to capture yearly patterns.
   ```python
   from statsmodels.tsa.statespace.SARIMAX import SARIMAX
   model = SARIMAX(df['Sales'], order=(1, 1, 1), seasonal_order=(1, 1, 1, 12))
-  results = model.fit()```
+  results = model.fit()
 - Forecasted future sales using results.predict() and visualized predictions.
 
 ## Requirements
