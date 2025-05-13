@@ -56,4 +56,4 @@ This project demonstrates how to model and forecast monthly champagne sales usin
 
 ## Requirements
  ```pip install
- pandas numpy matplotlib seaborn statsmodels```
+ pandas numpy matplotlib seaborn statsmodels
